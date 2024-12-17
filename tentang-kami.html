@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About - Fried Chicken Mitra</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-gray-50 font-sans">
+
+    <!-- Header Section -->
+    <header class="fixed w-full bg-white shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-semibold text-red-600 flex items-center space-x-2">
+                <i class="fas fa-utensils text-4xl"></i>
+                <span>Fried Chicken Mitra</span>
+            </a>
+            <nav class="hidden md:flex space-x-6 text-lg text-gray-700">
+                <a href="./index.html" class="hover:text-red-600 transition">Home</a>
+                <a href="./tentang-kami.html" class="hover:text-red-600 transition">About</a>
+                <a href="./menu.html" class="hover:text-red-600 transition">Menu</a>
+                <a href="#contact" class="hover:text-red-600 transition">Contact</a>
+            </nav>
+            <button id="mobileMenuButton" class="md:hidden text-gray-800 focus:outline-none">
+                <i class="fas fa-bars text-3xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="pt-32 pb-16 bg-gray-100 px-6 md:px-20">
+        <div class="container mx-auto text-center mb-12" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-gray-800">Tentang Kami</h2>
+            <p class="text-xl text-gray-600 mt-4">Fried Chicken Mitra adalah tempat terbaik untuk menikmati ayam goreng yang lezat, dengan cita rasa yang unik dan pelayanan yang ramah.</p>
+        </div>
+
+        <!-- About Content -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="flex justify-center" data-aos="fade-right" data-aos-delay="200">
+                <img src="path_to_image.jpg" alt="Fried Chicken Mitra" class="w-full h-96 object-cover rounded-lg shadow-lg border-4 border-gray-200">
+            </div>
+            <div class="flex flex-col justify-center text-left text-gray-700" data-aos="fade-left" data-aos-delay="400">
+                <h3 class="text-2xl font-semibold mb-4">Misi Kami</h3>
+                <p class="text-lg leading-relaxed mb-6">Kami berkomitmen untuk menyajikan ayam goreng berkualitas tinggi, dengan bahan-bahan pilihan dan resep rahasia yang membuat setiap gigitan begitu istimewa. Menyediakan pengalaman kuliner yang tak terlupakan adalah tujuan utama kami.</p>
+                <h3 class="text-2xl font-semibold mb-4">Visi Kami</h3>
+                <p class="text-lg leading-relaxed">Visi kami adalah menjadi mitra terpercaya dalam industri kuliner, yang menyediakan produk terbaik dengan inovasi yang berkelanjutan dan perhatian penuh terhadap kualitas dan pelayanan pelanggan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-red-600 text-white text-center py-6">
+        <p>&copy; 2024 Fried Chicken Mitra | All Rights Reserved</p>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuButton = document.getElementById("mobileMenuButton");
+        const mobileMenu = document.createElement("div");
+        mobileMenu.classList.add("fixed", "top-0", "right-0", "bg-white", "w-64", "h-full", "shadow-lg", "z-50", "hidden");
+        mobileMenu.innerHTML = `
+            <div class="flex justify-end p-4">
+                <button id="closeMenu" class="text-gray-800 text-3xl">&times;</button>
+            </div>
+            <nav class="flex flex-col space-y-4 p-4 text-lg">
+                <a href="#home" class="hover:text-red-600">Home</a>
+                <a href="#about" class="hover:text-red-600">About</a>
+                <a href="#menu" class="hover:text-red-600">Menu</a>
+                <a href="#partners" class="hover:text-red-600">Partners</a>
+                <a href="#testimonials" class="hover:text-red-600">Testimonials</a>
+                <a href="#contact" class="hover:text-red-600">Contact</a>
+            </nav>
+        `;
+
+        mobileMenuButton.addEventListener("click", () => {
+            mobileMenu.classList.remove("hidden");
+            document.body.appendChild(mobileMenu);
+        });
+
+        document.getElementById("closeMenu").addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+        });
+    </script>
+
+    <!-- AOS Initialization -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-out',
+        });
+    </script>
+
+</body>
+</html>

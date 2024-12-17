@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fried Chicken Mitra</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Anime.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/anime@3.2.1/anime.min.js"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header id="header" class="fixed w-full z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold flex items-center text-red-600">
+                    <span class="mr-2 text-4xl"><i class="fas fa-utensils"></i></span>
+                    Fried Chicken Mitra
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="./index.html" class="text-gray-800 hover:text-red-600 transition"><i class="fas fa-home"></i> Beranda</a>
+                    <a href="./tentang-kami.html" class="text-gray-800 hover:text-red-600 transition"><i class="fas fa-info-circle"></i> Tentang</a>
+                    <a href="./menu.html" class="text-gray-800 hover:text-red-600 transition"><i class="fas fa-hamburger"></i> Menu</a>
+                    <a href="#mitra" class="text-gray-800 hover:text-red-600 transition"><i class="fas fa-users"></i> Mitra</a>
+                    <a href="#kontak" class="text-gray-800 hover:text-red-600 transition"><i class="fas fa-phone"></i> Kontak</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden text-gray-800">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu" class="pt-24 pb-12 px-6">
+        <div class="text-center text-3xl font-semibold text-gray-800 mb-8" data-aos="fade-up">
+            <h2><i class="fas fa-hamburger"></i> Our Menu</h2>
+        </div>
+
+        <!-- Category Selector -->
+        <div class="flex justify-center mb-8" data-aos="fade-up" data-aos-delay="200">
+            <label for="category" class="mr-4 text-lg font-medium text-gray-800">Pilih Kategori:</label>
+            <select id="category" class="border border-gray-300 rounded px-4 py-2">
+                <option value="all">Semua</option>
+                <option value="fried-chicken">Fried Chicken</option>
+                <option value="drinks">Drinks</option>
+                <option value="sides">Sides</option>
+            </select>
+        </div>
+
+<!-- Menu Items Section (Grid Layout) -->
+<div id="menuItems" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
+
+    <!-- Item Examplefried-chicken -->
+    <div class="bg-white text-red-600 rounded-lg shadow-lg p-3 transform transition duration-500 hover:scale-105 category-fried-chicken" data-aos="zoom-in" data-aos-delay="100">
+        <img src="path_to_image_1.jpg" alt="Menu Item 1" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-md mb-3">
+        <h3 class="text-sm sm:text-base md:text-xl font-semibold">Crispy Fried Chicken <i class="fas fa-crown"></i></h3>
+        <p class="text-xs sm:text-sm md:text-base mb-2">A crispy fried chicken with a blend of special seasonings.</p>
+        <p class="text-sm sm:text-base md:text-lg font-semibold">Rp. 50,000</p>
+    </div>
+
+    <div class="bg-white text-red-600 rounded-lg shadow-lg p-3 transform transition duration-500 hover:scale-105 category-fried-chicken" data-aos="zoom-in" data-aos-delay="100">
+        <img src="path_to_image_1.jpg" alt="Menu Item 1" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-md mb-3">
+        <h3 class="text-sm sm:text-base md:text-xl font-semibold">Crispy Fried Chicken <i class="fas fa-crown"></i></h3>
+        <p class="text-xs sm:text-sm md:text-base mb-2">A crispy fried chicken with a blend of special seasonings.</p>
+        <p class="text-sm sm:text-base md:text-lg font-semibold">Rp. 50,000</p>
+    </div>
+
+    <div class="bg-white text-red-600 rounded-lg shadow-lg p-3 transform transition duration-500 hover:scale-105 category-fried-chicken" data-aos="zoom-in" data-aos-delay="100">
+        <img src="path_to_image_1.jpg" alt="Menu Item 1" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-md mb-3">
+        <h3 class="text-sm sm:text-base md:text-xl font-semibold">Crispy Fried Chicken <i class="fas fa-crown"></i></h3>
+        <p class="text-xs sm:text-sm md:text-base mb-2">A crispy fried chicken with a blend of special seasonings.</p>
+        <p class="text-sm sm:text-base md:text-lg font-semibold">Rp. 50,000</p>
+    </div>
+
+    <div class="bg-white text-red-600 rounded-lg shadow-lg p-3 transform transition duration-500 hover:scale-105 category-fried-chicken" data-aos="zoom-in" data-aos-delay="100">
+        <img src="path_to_image_1.jpg" alt="Menu Item 1" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-md mb-3">
+        <h3 class="text-sm sm:text-base md:text-xl font-semibold">Crispy Fried Chicken <i class="fas fa-crown"></i></h3>
+        <p class="text-xs sm:text-sm md:text-base mb-2">A crispy fried chicken with a blend of special seasonings.</p>
+        <p class="text-sm sm:text-base md:text-lg font-semibold">Rp. 50,000</p>
+    </div>
+
+    <!-- Item Example drinks-->
+    <div class="bg-white text-red-600 rounded-lg shadow-lg p-3 transform transition duration-500 hover:scale-105 category-drinks" data-aos="zoom-in" data-aos-delay="100">
+        <img src="path_to_image_1.jpg" alt="Menu Item 2" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-md mb-3">
+        <h3 class="text-sm sm:text-base md:text-xl font-semibold">Crispy Fried Chicken <i class="fas fa-crown"></i></h3>
+        <p class="text-xs sm:text-sm md:text-base mb-2">A crispy fried chicken with a blend of special seasonings.</p>
+        <p class="text-sm sm:text-base md:text-lg font-semibold">Rp. 50,000</p>
+    </div>
+    <div class="bg-white text-red-600 rounded-lg shadow-lg p-3 transform transition duration-500 hover:scale-105 category-drinks" data-aos="zoom-in" data-aos-delay="100">
+        <img src="path_to_image_1.jpg" alt="Menu Item 2" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-md mb-3">
+        <h3 class="text-sm sm:text-base md:text-xl font-semibold">Crispy Fried Chicken <i class="fas fa-crown"></i></h3>
+        <p class="text-xs sm:text-sm md:text-base mb-2">A crispy fried chicken with a blend of special seasonings.</p>
+        <p class="text-sm sm:text-base md:text-lg font-semibold">Rp. 50,000</p>
+    </div>
+    <div class="bg-white text-red-600 rounded-lg shadow-lg p-3 transform transition duration-500 hover:scale-105 category-drinks" data-aos="zoom-in" data-aos-delay="100">
+        <img src="path_to_image_1.jpg" alt="Menu Item 2" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-md mb-3">
+        <h3 class="text-sm sm:text-base md:text-xl font-semibold">Crispy Fried Chicken <i class="fas fa-crown"></i></h3>
+        <p class="text-xs sm:text-sm md:text-base mb-2">A crispy fried chicken with a blend of special seasonings.</p>
+        <p class="text-sm sm:text-base md:text-lg font-semibold">Rp. 50,000</p>
+    </div>
+
+    <!-- Item Example Sides -->
+    <div class="bg-white text-red-600 rounded-lg shadow-lg p-3 transform transition duration-500 hover:scale-105 category-sides" data-aos="zoom-in" data-aos-delay="100">
+        <img src="path_to_image_1.jpg" alt="Menu Item 3" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-md mb-3">
+        <h3 class="text-sm sm:text-base md:text-xl font-semibold">Crispy Fried Chicken <i class="fas fa-crown"></i></h3>
+        <p class="text-xs sm:text-sm md:text-base mb-2">A crispy fried chicken with a blend of special seasonings.</p>
+        <p class="text-sm sm:text-base md:text-lg font-semibold">Rp. 50,000</p>
+    </div>
+
+    <div class="bg-white text-red-600 rounded-lg shadow-lg p-3 transform transition duration-500 hover:scale-105 category-sides" data-aos="zoom-in" data-aos-delay="100">
+        <img src="path_to_image_1.jpg" alt="Menu Item 3" class="w-full h-24 sm:h-32 md:h-40 object-cover rounded-md mb-3">
+        <h3 class="text-sm sm:text-base md:text-xl font-semibold">Crispy Fried Chicken <i class="fas fa-crown"></i></h3>
+        <p class="text-xs sm:text-sm md:text-base mb-2">A crispy fried chicken with a blend of special seasonings.</p>
+        <p class="text-sm sm:text-base md:text-lg font-semibold">Rp. 50,000</p>
+    </div>
+
+    <!-- Additional Items here -->
+
+</div>
+
+
+
+    </section>
+
+    <!-- Footer Section (Optional) -->
+    <footer class="bg-red-600 py-6 text-center text-white">
+        <p>&copy; 2024 Fried Chicken Mitra <i class="fas fa-utensils"></i></p>
+    </footer>
+
+    <!-- JavaScript to Toggle Mobile Menu -->
+    <script>
+        const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        // Category Filter Logic
+        const categorySelect = document.getElementById('category');
+        categorySelect.addEventListener('change', (e) => {
+            const selectedCategory = e.target.value;
+            const items = document.querySelectorAll('.category-fried-chicken, .category-drinks, .category-sides');
+            items.forEach(item => {
+                if (selectedCategory === 'all') {
+                    item.classList.remove('hidden');
+                } else if (item.classList.contains('category-' + selectedCategory)) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+    <!-- AOS Initialization Script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // animation duration in ms
+            once: true, // animation happens once when it comes into view
+        });
+    </script>
+</body>
+</html>

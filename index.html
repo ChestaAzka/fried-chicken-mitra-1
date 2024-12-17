@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fried Chicken Mitra - Peluang Kemitraan Terbaik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .float { animation: float 3s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-red-600 to-yellow-400 text-white">
+    <header id="header" class="fixed w-full z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold flex items-center text-white">
+                    <span class="mr-2 text-4xl float">🍗</span>
+                    Fried Chicken Mitra
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#beranda" class="text-white hover:text-yellow-300 transition">Beranda</a>
+                    <a href="./tentang-kami.html" class="text-white hover:text-yellow-300 transition">Tentang</a>
+                    <a href="./menu.html" class="text-white hover:text-yellow-300 transition">Menu</a>
+                    <a href="#mitra" class="text-white hover:text-yellow-300 transition">Mitra</a>
+                    <a href="#kontak" class="text-white hover:text-yellow-300 transition">Kontak</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobileMenu" class="hidden md:hidden">
+            <a href="#beranda" class="block py-2 px-4 text-sm text-white hover:bg-yellow-400 hover:text-red-600">Beranda</a>
+            <a href="./tentang-kami.html" class="block py-2 px-4 text-sm text-white hover:bg-yellow-400 hover:text-red-600">Tentang</a>
+            <a href="./menu.html" class="block py-2 px-4 text-sm text-white hover:bg-yellow-400 hover:text-red-600">Menu</a>
+            <a href="#mitra" class="block py-2 px-4 text-sm text-white hover:bg-yellow-400 hover:text-red-600">Mitra</a>
+            <a href="#kontak" class="block py-2 px-4 text-sm text-white hover:bg-yellow-400 hover:text-red-600">Kontak</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="beranda" class="pt-24 pb-12 min-h-screen flex items-center relative overflow-hidden">
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 text-shadow" data-aos="fade-up">Fried Chicken Mitra</h1>
+                <p class="text-xl md:text-2xl mb-8 text-shadow" data-aos="fade-up" data-aos-delay="200">Kelezatan dalam Setiap Gigitan, Kesuksesan dalam Setiap Kemitraan</p>
+                <a href="#mitra" class="bg-yellow-400 text-red-600 text-lg font-bold px-8 py-3 rounded-full hover:bg-opacity-90 transition inline-flex items-center" data-aos="fade-up" data-aos-delay="400">
+                    Mulai Bermitra
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="absolute inset-0 z-0">
+                <img src="https://source.unsplash.com/random/1920x1080?fried-chicken" alt="Background" class="w-full h-full object-cover opacity-30">
+            </div>
+        </section>
+
+        <section id="tentang" class="py-16 bg-white text-red-600">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">Tentang Kami</h2>
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+                        <img src="https://source.unsplash.com/random/600x400?restaurant" alt="Tentang Kami" class="rounded-lg shadow-lg">
+                    </div>
+                    <div class="w-full md:w-1/2 md:pl-8" data-aos="fade-left">
+                        <p class="text-lg mb-4">Fried Chicken Mitra adalah jaringan restoran cepat saji yang menghadirkan cita rasa autentik ayam goreng Indonesia. Kami berkomitmen untuk menyajikan makanan berkualitas tinggi dengan harga terjangkau.</p>
+                        <p class="text-lg mb-4">Dengan pengalaman lebih dari 10 tahun di industri makanan, kami telah mengembangkan resep rahasia yang membuat ayam goreng kami begitu istimewa dan disukai oleh berbagai kalangan.</p>
+                        <p class="text-lg">Bergabunglah dengan kami dan jadilah bagian dari kesuksesan Fried Chicken Mitra!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="py-16 bg-red-600">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold mb-8 text-center text-white" data-aos="fade-up">Menu Favorit</h2>
+                
+                <!-- Card Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                        <img src="https://source.unsplash.com/random/400x300?fried-chicken" alt="Original Fried Chicken" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-red-600">Original Fried Chicken</h3>
+                            <p class="text-gray-600 mb-4">Ayam goreng renyah dengan bumbu rahasia kami.</p>
+                            <button class="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-500 transition duration-300">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://source.unsplash.com/random/400x300?spicy-chicken" alt="Spicy Fried Chicken" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-red-600">Spicy Fried Chicken</h3>
+                            <p class="text-gray-600 mb-4">Ayam goreng dengan tambahan bumbu pedas yang menggugah selera.</p>
+                            <button class="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-500 transition duration-300">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                        <img src="https://source.unsplash.com/random/400x300?chicken-burger" alt="Chicken Burger" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-red-600">Chicken Burger</h3>
+                            <p class="text-gray-600 mb-4">Burger ayam dengan saus spesial dan sayuran segar.</p>
+                            <button class="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-500 transition duration-300">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="600">
+                        <img src="https://source.unsplash.com/random/400x300?chicken-wrap" alt="Chicken Wrap" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-red-600">Chicken Wrap</h3>
+                            <p class="text-gray-600 mb-4">Tortilla lezat berisi ayam panggang dan sayuran segar.</p>
+                            <button class="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-500 transition duration-300">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="800">
+                        <img src="https://source.unsplash.com/random/400x300?grilled-chicken" alt="Grilled Chicken" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-red-600">Grilled Chicken</h3>
+                            <p class="text-gray-600 mb-4">Ayam panggang lembut dengan bumbu spesial.</p>
+                            <button class="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-500 transition duration-300">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="1000">
+                        <img src="https://source.unsplash.com/random/400x300?chicken-salad" alt="Chicken Salad" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-red-600">Chicken Salad</h3>
+                            <p class="text-gray-600 mb-4">Salad sehat dengan potongan ayam panggang dan dressing pilihan.</p>
+                            <button class="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-500 transition duration-300">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Button Navigasi -->
+                <div class="mt-8 text-center" data-aos="fade-up">
+                    <a href="menu.html" class="inline-block bg-yellow-500 text-white py-3 px-6 rounded hover:bg-yellow-600 transition duration-300">
+                        Lihat Selengkapnya
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="mitra" class="py-16 bg-yellow-400 text-red-600">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">Menjadi Mitra</h2>
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+                        <img src="https://source.unsplash.com/random/600x400?partnership" alt="Menjadi Mitra" class="rounded-lg shadow-lg">
+                    </div>
+                    <div class="w-full md:w-1/2 md:pl-8" data-aos="fade-left">
+                        <h3 class="text-2xl font-bold mb-4">Keuntungan Menjadi Mitra:</h3>
+                        <ul class="list-disc list-inside mb-6 text-lg">
+                            <li>Dukungan penuh dalam pembukaan dan operasional outlet</li>
+                            <li>Pelatihan komprehensif untuk Anda dan tim Anda</li>
+                            <li>Sistem manajemen yang teruji dan efisien</li>
+                            <li>Pasokan bahan baku berkualitas tinggi</li>
+                            <li>Dukungan pemasaran dan promosi</li>
+                        </ul>
+                        <a href="https://wa.me/6281383328760" class="bg-red-600 text-white text-lg font-bold px-8 py-3 rounded-full hover:bg-opacity-90 transition inline-flex items-center" target="_blank">
+                            Hubungi Kami
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimoni" class="py-16 bg-white text-red-600">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">Testimoni Mitra</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-red-100 rounded-lg p-6 shadow-lg" data-aos="fade-up">
+                        <p class="text-lg mb-4">"Bergabung dengan Fried Chicken Mitra adalah keputusan terbaik yang pernah saya ambil. Dukungan tim sangat luar biasa!"</p>
+                        <p class="font-bold">- Budi Santoso, Jakarta</p>
+                    </div>
+                    <div class="bg-red-100 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                        <p class="text-lg mb-4">"Sistem manajemen yang efisien dan pelatihan yang komprehensif membuat saya percaya diri dalam menjalankan bisnis ini."</p>
+                        <p class="font-bold">- Siti Rahayu, Surabaya</p>
+                    </div>
+                    <div class="bg-red-100 rounded-lg p-6 shadow-lg" data-aos="fade-up" data-aos-delay="400">
+                        <p class="text-lg mb-4">"Kualitas produk yang konsisten dan dukungan pemasaran membuat outlet saya selalu ramai pengunjung."</p>
+                        <p class="font-bold">- Agus Wijaya, Bandung</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-16 bg-red-600 text-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">FAQ</h2>
+                <div class="space-y-4" data-aos="fade-up">
+                    <div class="faq-item">
+                        <button class="faq-question w-full text-left py-4 px-6 bg-red-700 hover:bg-opacity-80 rounded-lg flex justify-between items-center">
+                            <span>Berapa modal yang dibutuhkan untuk menjadi mitra?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer hidden mt-2 p-4 bg-red-800 rounded-lg">
+                            <p>Modal yang dibutuhkan bervariasi tergantung lokasi dan jenis outlet. Kami menyediakan berbagai paket kemitraan yang dapat disesuaikan dengan budget Anda. Silakan hubungi tim kami untuk informasi lebih lanjut.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question w-full text-left py-4 px-6 bg-red-700 hover:bg-opacity-80 rounded-lg flex justify-between items-center">
+                            <span>Berapa lama proses untuk membuka outlet baru?</span>
+                            <svg class="w-6 h-6 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer hidden mt-2 p-4 bg-red-800 rounded-lg">
+                            <p>Proses pembukaan outlet baru biasanya memakan waktu 2-3 bulan, tergantung pada kesiapan lokasi dan perizinan. Tim kami akan membantu Anda di setiap tahap proses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="py-16 bg-yellow-400 text-red-600">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">Hubungi Kami</h2>
+                <div class="max-w-lg mx-auto">
+                    <form id="contactForm" class="space-y-4" data-aos="fade-up">
+                        <div>
+                            <label for="name" class="block mb-2 font-bold">Nama</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-2 rounded-lg border border-red-300 focus:outline-none focus:ring-2 focus:ring-red-600">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 font-bold">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-2 rounded-lg border border-red-300 focus:outline-none focus:ring-2 focus:ring-red-600">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2 font-bold">Pesan</label>
+                            <textarea id="message" name="message" required class="w-full px-4 py-2 rounded-lg border border-red-300 focus:outline-none focus:ring-2 focus:ring-red-600" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-opacity-90 transition">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-red-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-between items-center">
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2">Fried Chicken Mitra</h3>
+                    <p>Kelezatan dalam Setiap Gigitan, Kesuksesan dalam Setiap Kemitraan</p>
+                </div>
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h4 class="text-lg font-bold mb-2">Kontak</h4>
+                    <p>Email: info@friedchickenmitra.com</p>
+                    <p>Telepon: (021) 1234-5678</p>
+                </div>
+                <div class="w-full md:w-1/3">
+                    <h4 class="text-lg font-bold mb-2">Ikuti Kami</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-yellow-400 transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-white hover:text-yellow-400 transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-white hover:text-yellow-400 transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-red-700 my-8">
+            <p class="text-center">&copy; 2023 Fried Chicken Mitra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // FAQ accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('svg');
+
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Header background opacity change on scroll
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('bg-red-600');
+                header.classList.remove('bg-opacity-90', 'backdrop-blur-md');
+            } else {
+                header.classList.remove('bg-red-600');
+                header.classList.add('bg-opacity-90', 'backdrop-blur-md');
+            }
+        });
+
+        // Form submission (replace with your own logic)
+        const contactForm = document.getElementById('contactForm');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah terkirim. Kami akan segera menghubungi Anda.');
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
